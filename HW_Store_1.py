@@ -10,6 +10,7 @@ class Product:
 class EnterError(Exception):
     pass
 
+
 class Store:
 
 
