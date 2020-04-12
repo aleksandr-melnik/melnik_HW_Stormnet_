@@ -12,6 +12,7 @@ class EnterError(Exception):
 
 class Store:
 
+
     def __init__(self, title="Магазин на диване"):
 
         self.title = title
