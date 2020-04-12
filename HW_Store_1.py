@@ -63,6 +63,8 @@ class Manager:
         return Manager.store
 
 
+
+
     @staticmethod
     def create_add_to_store_products():
         need_to_create_a_product = True
