@@ -1,0 +1,2 @@
+class EnterError(Exception):
+    pass
