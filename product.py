@@ -5,3 +5,5 @@ class Product:
             raise EnterError('Неверно указана цена! Повторите ввод.')
         self.title = title
         self.price = int(price)
+
+

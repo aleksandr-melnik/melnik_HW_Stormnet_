@@ -43,6 +43,7 @@ class Manager:
             product_count = mumber_of_products
             data_dict['storage'].append((product_title, product_price, product_count))
         json.dump(data_dict, store_product_list)
+
     @staticmethod
     def load_data_from_file():
         store_product_list = open("store_product_list.txt", "r")

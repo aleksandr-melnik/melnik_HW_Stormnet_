@@ -1,2 +1,3 @@
 class EnterError(Exception):
     pass
+
