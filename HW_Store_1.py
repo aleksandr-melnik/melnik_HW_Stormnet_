@@ -1,4 +1,5 @@
 import json
+
 class Product:
     def __init__(self, title, price):
         #assert int(price) > 1000, 'Ошибка'
