@@ -7,3 +7,4 @@ if __name__ == '__main__':
     Manager.dump_data_to_file()
     Manager.load_data_from_file()
     print('Магазин %s успешно создан' % Manager.store.title)
+
