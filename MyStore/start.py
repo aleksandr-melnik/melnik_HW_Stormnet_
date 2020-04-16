@@ -1,4 +1,4 @@
-from manager import Manager
+from MyStore.manager import Manager
 if __name__ == '__main__':
     print('Создаем магазин')
     Manager.create_store()

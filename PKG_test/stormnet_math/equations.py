@@ -10,4 +10,5 @@ def solve_quadratic_equation(a, b, c):
         x1 = (-b + math.sqrt(d)) / (2 * a)
         x2 = (-b - math.sqrt(d)) / (2 * a)
         print('Решение =', x1, 'and', x2)
-solve_quadratic_equation(9,90,3)
+    #return solve_quadratic_equation(a, b, c)
+

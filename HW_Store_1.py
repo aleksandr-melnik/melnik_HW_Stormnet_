@@ -1,6 +1,4 @@
 import json
-
-
 class Product:
     def __init__(self, title, price):
         #assert int(price) > 1000, 'Ошибка'
@@ -31,8 +29,8 @@ class Store:
         if product:
             print(self._product_details(product))
         else:
-            for product in self.storage.keys():
-                print(self._product_details(product))
+            for product in self.storage.keys(): #метод словаря keys() и values(), или items (пара ключь значение)
+                print(self._product_details(product)) #все атрибуты объекта через self
 class Manager:
     store = None
     @staticmethod
@@ -64,7 +62,7 @@ class Manager:
                 need_to_create_a_product = False
     @staticmethod
     def dump_data_to_file():
-        store_product_list = open("store_product_list.txt", "w")
+        store_product_list = open("MyStore/store_product_list.txt", "w")
         data_dict = {
             'store_title': Manager.store.title,
             'storage': []
@@ -77,7 +75,7 @@ class Manager:
         json.dump(data_dict, store_product_list)
     @staticmethod
     def load_data_from_file():
-        store_product_list = open("store_product_list.txt", "r")
+        store_product_list = open("MyStore/store_product_list.txt", "r")
         data = json.load(store_product_list)
         Manager.store = Store(title=data['store_title'])
 

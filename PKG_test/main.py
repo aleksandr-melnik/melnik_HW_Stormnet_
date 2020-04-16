@@ -6,4 +6,7 @@ a*x**2 + b*x + c = 0. На вход функция принимает a, b и с
 
 from stormnet_math import equations
 if __name__ == '__main__':
-    print(solve_quadratic_equation())
+    a = float(input("Введите значение a:"))
+    b = float(input("Введите значение b:"))
+    c = float(input("Введите значение c:"))
+    equations.solve_quadratic_equation(a,b,c)
