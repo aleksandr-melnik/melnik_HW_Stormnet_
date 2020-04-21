@@ -1,6 +1,7 @@
 import json
 from MyStore.product import Product
 from MyStore.store import Store
+
 class Manager:
     store = None
     @staticmethod

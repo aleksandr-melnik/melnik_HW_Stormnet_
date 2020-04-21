@@ -22,3 +22,4 @@ class Store:
             for product in self.storage.keys():
                 print(self._product_details(product))
 
+
